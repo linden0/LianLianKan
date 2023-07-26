@@ -12,7 +12,7 @@ export default function Game(props) {
 
     // popup states
     const [showInstructions, setShowInstructions] = useState(false);
-    const [showWinPopup, setShowWinPopup] = useState(true);
+    const [showWinPopup, setShowWinPopup] = useState(false);
 
     const gridRef = useRef(null);
     const iconClickAudio = new Audio(require("../audio/osu.mp3"))
@@ -152,6 +152,7 @@ export default function Game(props) {
                         <p>Tiles must have an unblocked path connecting them</p>
                         <img className="instruction-img" src={require("../img/instructions/Instructions3.png")} alt="instructions"/>
                         <p>Paths may not make more than two turns</p>
+                        <p>If you see no matches, hit the shuffle button  <button className='shuffle-btn'><img src={require("../img/shuffle.png")} alt="shuffle" height="30px" width="30px" onClick={shuffleBoard}/></button></p>
                         <p>Clear all tiles to win!</p>
                         
                     </div>
