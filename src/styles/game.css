@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Island+Moments&family=Ma+Shan+Zheng&display=swap');
+.game-wrapper {
+    height: 100vh;
+    width: 100vw;
+    background-color: #1E1E1E;
+}
+
+.game-bar-wrapper {
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+}
+
+.game-bar {
+    height: 40px;
+    justify-content: center;
+    gap: 50px;
+}
+.instruction-btn {
+    font-family: 'Indie Flower', cursive;
+    border-radius: 16px;
+    font-size: 35px;
+    color: #E9A366;
+    background-color: #6B3D14;
+    padding: 0px 40px;
+    border: none;
+    cursor: pointer;
+}
+.instruction-btn:hover {
+    background-color: #572e0a;
+}
+
+.shuffle-btn {
+    background-color: #E9A366;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+.shuffle-btn:hover {
+    background-color: #c9864b;
+}
+
+.game-board-wrapper {
+    height: calc(100vh - 60px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-board {
+    height: 90%;
+    width: 90%;
+    background-color: #935723;
+    border: 15px solid #6B3D14;
+    display: grid;
+    gap: 0px;
+    grid-template-columns: 10px repeat(auto-fit, minmax(61px, 1fr)) 10px;
+    grid-template-rows: 10px repeat(auto-fit, minmax(61px, 1fr)) 10px;
+}
+
+
+
+
+
+
+
+.tile {
+    background-color: #E9A366;
+    border: 2px solid #6B3D14;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 57px;
+    width: 57px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tile img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.tile:hover {
+    background-color: #a36e3f !important;
+}
+
+.popup-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0,0,0,0.4);
+    z-index: 1;
+}
+
+.win-popup {
+    width: 100vw;
+    text-align: center;
+    margin: auto;
+    margin-top: 300px;
+}
+
+.banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #6B3D14;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.banner img {
+    width: 400px;
+    max-width: 90%;
+}
+
+.play-again-btn {
+    font-family: 'Ma Shan Zheng', cursive;
+    font-size: 30px;
+    background-color: #FFE39E;
+    border-radius: 16px;
+    padding: 10px 40px;
+    color: #6B3D14;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px
+}
+
+.play-again-btn:hover {
+    background-color: #e6c17a;
+}
+
+.instructions-popup {
+    margin-top: 20px !important;
+    background-color: #FFE39E;
+    border-radius: 16px;
+    width: 900px;
+    height: 90%;
+    max-width: 90%;
+    text-align: center;
+    margin: auto;
+    overflow-y: scroll;
+
+}
+
+.instructions-popup h1, .instructions-popup p {
+    margin-top: 0px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 50px;
+    color: #6B3D14;
+    font-weight: 900;
+}
+
+.instructions-popup p {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.instruction-img {
+    width: 400px;
+    max-width: 90%;
+}
+
+.modal-close-wrapper {
+    justify-content: flex-end;
+    padding: 5px 10px 0px 5px;
+}
+.modal-close {
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
