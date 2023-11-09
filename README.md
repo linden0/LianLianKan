@@ -1,6 +1,5 @@
 
-# Lian Lian Kan
-
+# [Lian Lian Kan](https://lianliankan.netlify.app)
 ## Overview
 A Chinese tile matching game. Click tiles that have the same icon and an unobstructed path between them that makes no more than 2 turns.
 
